@@ -210,10 +210,12 @@
             var y = document.getElementById("burger-btn");
             var z = document.getElementById("close-btn");
 
+            var num = window.scrollY + (window.innerHeight * 0.1);
+
             x.style.height = "90vh";
+            x.style.marginTop = num.toString() + "px";
             y.style.display = "none";
             z.style.display = "block";
-            x.style.visibility = "visible";
             
         }
 
@@ -222,17 +224,27 @@
             var y = document.getElementById("burger-btn");
             var z = document.getElementById("close-btn");
 
-            x.style.visibility = "hidden";
+            var num = (window.innerHeight * 0.1);
+
             x.style.height = "0vh";
+            x.style.marginTop = num.toString() + "px";
             y.style.display = "block";
             z.style.display = "none";
         }
 
         window.addEventListener("load", () => {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("burger-btn");
+            var z = document.getElementById("close-btn");
+
+            var num = (window.innerHeight * 0.1);
+
             for (var  i = 1; i < 7; i++) {
                 document.querySelector("#link" + i).addEventListener("click", e => {
-                    var x = document.getElementById("menu");
-                    x.style.display = "none";
+                    x.style.height = "0vh";
+                    x.style.marginTop = num.toString() + "px";
+                    y.style.display = "block";
+                    z.style.display = "none";
                 });
             }
         });
