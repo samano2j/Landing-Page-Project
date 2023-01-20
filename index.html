@@ -269,6 +269,23 @@
           modal.style.display = "none";
         }
 
+        var a = window.matchMedia("(min-width: 992px)");
+        myFunction1(a) 
+        a.addListener(myFunction1)
+
+        function myFunction1(a) {
+            var y = document.getElementById("burger-btn");
+            var z = document.getElementById("close-btn");
+
+            if (a.matches) {
+                y.style.display = "none";
+                z.style.display = "none";
+            }
+            else {
+                y.style.display = "block";
+            }
+        }
+
     </script>
 
 </body>
