@@ -74,24 +74,6 @@ main header nav ul a:active, main header nav ul a:visited, main header nav ul a:
   color: white;
   text-decoration: none;
 }
-main header #burger-btn {
-  background-image: url(/images/icon/burger-btn.png);
-  background-size: cover;
-  border-radius: 0;
-  height: 50px;
-  width: 50px;
-}
-main header #close-btn {
-  background-image: url(/images/icon/close-btn.png);
-  background-size: cover;
-  border-radius: 0;
-  height: 50px;
-  width: 50px;
-  display: none;
-}
-main header #burger-btn:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
 main img {
   height: 50px;
   width: 200px;
@@ -381,15 +363,6 @@ footer .copyright img {
   width: 100%;
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 5rem;
-  font-weight: bold;
-}
-
 button {
   background: linear-gradient(to right, rgb(208, 92, 9), orange);
   color: white;
@@ -402,6 +375,36 @@ button {
 button:hover {
   background: white;
   color: rgb(255, 170, 77);
+}
+
+#burger-btn {
+  background-image: url(/images/icon/burger-btn.png);
+  background-size: cover;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+}
+
+#close-btn {
+  background-image: url(/images/icon/close-btn.png);
+  background-size: cover;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+#burger-btn:hover, #close-btn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {

@@ -12,3 +12,34 @@ button:hover {
     background: white;
     color: $color-main;
 }
+
+
+#burger-btn {
+    background-image: url(/images/icon/burger-btn.png);
+    background-size: cover;
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+}
+
+#close-btn {
+    background-image: url(/images/icon/close-btn.png);
+    background-size: cover;
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+#burger-btn:hover, #close-btn {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 5rem;
+    font-weight: bold;
+}
