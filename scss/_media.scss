@@ -1,0 +1,243 @@
+@media screen and (min-width: 768px) {
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    main {
+        background-position: center;
+
+
+        .headline {
+            margin-left: 40%;
+            justify-content: start;
+            gap: 20px;
+            width: 60%;
+
+            article {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+    .benefit {
+        background-position: left;
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .benefit-group {
+            grid-template-columns: 1fr 1fr;
+            height: 70vh;
+            padding: 30px;
+            gap: 15px;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .partner {
+
+        .container {
+            height: 50vh;
+            width: 60%;
+            margin-left: 40%;
+        }
+
+        .logo {
+            height:35vh;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                height: 100px;
+                width: 200px;
+            }
+        }
+    }
+
+    .figures {
+
+        .gallery {
+
+            @for $i from 4 through 12 {
+                li:nth-child(#{$i}){  
+                    display: block;
+                }
+            }
+        }
+
+        button {
+            font-size: 1.5rem;
+        }
+    }
+
+    .testimonial {
+        .container {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .testimonials-group {
+            flex-direction: row;
+
+            article {
+                padding: 10px;
+            }
+        }
+    }
+
+    .closure {
+        justify-content: end;
+        
+        .closure-group {
+            padding: 20px 10px;
+            width: 50%;
+        }
+
+
+        form {
+            input {
+                width: 300px;
+            }
+        }
+    }
+
+    footer {
+        .about p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    main {
+
+        header {
+            .icon {
+                display: none;
+            }
+
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 70%;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+
+                    a:hover {
+                        color: $color-title;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .headline {
+            margin-left: 45%;
+            width: 50%;
+
+            article {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    .benefit {
+        
+        .container {
+            width: 600px;
+        }
+
+    }
+
+    .figures {
+
+        .gallery {
+
+            @for $i from 10 through 16 {
+                li:nth-child(#{$i}){  
+                    display: block;
+                }
+            }
+        }
+
+        button {
+            font-size: 2rem;
+        }
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .figures{
+        .gallery {
+            li {
+                height: 25vh;
+                flex-grow: 1;
+            }
+        }
+    }   
+
+    .closure {
+
+        .closure-group {
+            margin-right: 5%;
+            width: 40%;
+        }
+
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+}

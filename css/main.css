@@ -1,0 +1,572 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 170, 77);
+  text-shadow: -2px 2px black;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+main {
+  height: 100vh;
+  background-image: url(/images/main.png);
+  background-size: cover;
+  background-position: 20%;
+}
+main header {
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main header nav ul {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+main header nav ul a:active, main header nav ul a:visited, main header nav ul a:link {
+  color: white;
+  text-decoration: none;
+}
+main header .icon {
+  background-image: url(/images/burger-btn.png);
+  background-size: cover;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+}
+main img {
+  height: 50px;
+  width: 200px;
+}
+main .menu {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+}
+main .menu ul {
+  list-style: none;
+  text-decoration: none;
+  background-color: #ffce00;
+  text-align: center;
+  height: 90vh;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+main .menu ul a:active, main .menu ul a:visited, main .menu ul a:link {
+  color: black;
+  text-decoration: none;
+}
+main .menu ul a:hover {
+  color: white;
+}
+main .headline {
+  height: 90vh;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .headline article {
+  background-color: #ffce00;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main .headline article p {
+  padding: 5px;
+}
+
+.benefit {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/images/bg-benefit.png);
+  background-size: cover;
+}
+.benefit .benefit-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.benefit .benefit-group article {
+  background-color: #ffce00;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 10px;
+}
+.benefit .benefit-group article img {
+  height: 60px;
+}
+
+.partner {
+  height: 60vh;
+  padding: 20px;
+  background-image: url(/images/bg-partner.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.partner .logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+.partner .logo img {
+  height: 75px;
+  width: 150px;
+  background-color: white;
+}
+
+.figures {
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+}
+.figures .gallery {
+  padding: 10px;
+}
+.figures .gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  gap: 10px;
+}
+.figures .gallery li {
+  height: 20vh;
+  flex-grow: 1;
+}
+.figures .gallery img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.figures .gallery li:nth-child(4) {
+  display: none;
+}
+.figures .gallery li:nth-child(5) {
+  display: none;
+}
+.figures .gallery li:nth-child(6) {
+  display: none;
+}
+.figures .gallery li:nth-child(7) {
+  display: none;
+}
+.figures .gallery li:nth-child(8) {
+  display: none;
+}
+.figures .gallery li:nth-child(9) {
+  display: none;
+}
+.figures .gallery li:nth-child(10) {
+  display: none;
+}
+.figures .gallery li:nth-child(11) {
+  display: none;
+}
+.figures .gallery li:nth-child(12) {
+  display: none;
+}
+.figures .gallery li:nth-child(13) {
+  display: none;
+}
+.figures .gallery li:nth-child(14) {
+  display: none;
+}
+.figures .gallery li:nth-child(15) {
+  display: none;
+}
+.figures .gallery li:nth-child(16) {
+  display: none;
+}
+.figures .gallery img:hover {
+  opacity: 0.5;
+}
+
+.testimonial {
+  height: 60vh;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/images/bg-testimonial.png);
+  background-size: cover;
+  background-position: center;
+}
+.testimonial .testimonials-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.testimonial .testimonials-group article {
+  background-color: #ffce00;
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 80%;
+}
+.testimonial .testimonials-group article img {
+  grid-row: span 2;
+  height: 60px;
+}
+
+.closure {
+  height: 60vh;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/images/bg-closure.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closure .closure-group {
+  background-color: #ffce00;
+  border-radius: 20px;
+  padding: 10px;
+}
+.closure form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 10px;
+}
+.closure form input {
+  padding: 14px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 150px;
+}
+.closure form button {
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+footer {
+  height: 30vh;
+  background-color: #ffce00;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .about p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+footer img {
+  height: auto;
+  width: 30px;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 5px;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+footer .copyright img {
+  width: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+button {
+  background: linear-gradient(to right, rgb(208, 92, 9), orange);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  border: 0;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  main {
+    background-position: center;
+  }
+  main .headline {
+    margin-left: 40%;
+    justify-content: start;
+    gap: 20px;
+    width: 60%;
+  }
+  main .headline article {
+    font-size: 1.5rem;
+  }
+  .benefit {
+    background-position: left;
+  }
+  .benefit .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .benefit .benefit-group {
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    padding: 30px;
+    gap: 15px;
+  }
+  .benefit .benefit-group article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .partner .container {
+    height: 50vh;
+    width: 60%;
+    margin-left: 40%;
+  }
+  .partner .logo {
+    height: 35vh;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10px;
+  }
+  .partner .logo img {
+    height: 100px;
+    width: 200px;
+  }
+  .figures .gallery li:nth-child(4) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(5) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(6) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(7) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(8) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(9) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(10) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(11) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(12) {
+    display: block;
+  }
+  .figures button {
+    font-size: 1.5rem;
+  }
+  .testimonial .container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .testimonial .testimonials-group {
+    flex-direction: row;
+  }
+  .testimonial .testimonials-group article {
+    padding: 10px;
+  }
+  .closure {
+    justify-content: end;
+  }
+  .closure .closure-group {
+    padding: 20px 10px;
+    width: 50%;
+  }
+  .closure form input {
+    width: 300px;
+  }
+  footer .about p {
+    font-size: 1.2rem;
+  }
+  .modal-content {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  main header .icon {
+    display: none;
+  }
+  main header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  main header nav ul a:hover {
+    color: rgb(255, 170, 77);
+  }
+  main .menu {
+    display: none;
+  }
+  main .headline {
+    margin-left: 45%;
+    width: 50%;
+  }
+  main .headline article {
+    font-size: 2rem;
+  }
+  .benefit .container {
+    width: 600px;
+  }
+  .figures .gallery li:nth-child(10) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(11) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(12) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(13) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(14) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(15) {
+    display: block;
+  }
+  .figures .gallery li:nth-child(16) {
+    display: block;
+  }
+  .figures button {
+    font-size: 2rem;
+  }
+  .modal-content {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .figures .gallery li {
+    height: 25vh;
+    flex-grow: 1;
+  }
+  .closure .closure-group {
+    margin-right: 5%;
+    width: 40%;
+  }
+  .modal-content {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

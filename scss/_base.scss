@@ -1,0 +1,22 @@
+$color-title: rgb(255, 170, 77);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-title;
+    text-shadow: -2px 2px black;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}

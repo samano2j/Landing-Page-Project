@@ -1,0 +1,23 @@
+{
+  "name": "landing-page-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass scss:css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samano2j/Landing-Page-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samano2j/Landing-Page-Project/issues"
+  },
+  "homepage": "https://github.com/samano2j/Landing-Page-Project#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
