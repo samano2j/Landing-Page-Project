@@ -11,29 +11,32 @@
 </head>
 <body>
 
-    <main>
+    <main id="home">
+        <div class="container">
         <header>
             <nav>
-                <img src="/images/logo.png" alt="logo">
+                <img src="/images/logo/logo.png" alt="logo">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Benefits</a></li>
-                  <li><a href="#">Partners</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Subscribe</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#benefit">Benefits</a></li>
+                  <li><a href="#partner">Partners</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#testimonial">Testimonials</a></li>
+                  <li><a href="#closure">Subscribe</a></li>
                 </ul>
             </nav>
-            <button type="button" class="icon" onclick="myFunction()"></button>
+            <button id="burger-btn" type="button" onclick="openMenu()"></button>
+            <button id="close-btn" type="button" onclick="closeMenu()"></button>
         </header>
+        </div>
         <section class="menu">
             <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Benefits</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Subscribe</a></li>
+                <li><a id="link1" href="#home">Home</a></li>
+                <li><a id="link2" href="#benefit">Benefits</a></li>
+                <li><a id="link3" href="#partner">Partners</a></li>
+                <li><a id="link4" href="#gallery">Gallery</a></li>
+                <li><a id="link5" href="#testimonial">Testimonials</a></li>
+                <li><a id="link6" href="#closure">Subscribe</a></li>
               </ul>
         </section>
         <section class="headline">
@@ -48,45 +51,45 @@
         </section>
     </main>
 
-    <section class="benefit">
+    <section id="benefit" class="benefit">
         <div class="container">
             <h1>Choose our Products</h1>
             <div class="benefit-group">
                 <article>
-                    <img src="/images/hq.png" alt="icon1">
+                    <img src="/images/icon/hq.png" alt="icon1">
                     <h3>High-Quality</h3>
                 </article>
                 <article>
-                    <img src="/images/art.png" alt="icon2">
+                    <img src="/images/icon/art.png" alt="icon2">
                     <h3>Mind-Blowing Aesthetics</h3>
                 </article>
                 <article>
-                    <img src="/images/ship.png" alt="icon3">
+                    <img src="/images/icon/ship.png" alt="icon3">
                     <h3>Free Shipping</h3>
                 </article>
                 <article>
-                    <img src="/images/support.png" alt="icon4">
+                    <img src="/images/icon/support.png" alt="icon4">
                     <h3>Support the Industry</h3>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="partner">
+    <section id="partner" class="partner">
         <div class="container">
         <h1>Our Partners</h1>
             <div class="logo">
-                <img src="/images/partner1.png" alt="logo1">
-                <img src="/images/partner2.png" alt="logo2">
-                <img src="/images/partner3.png" alt="logo3">
-                <img src="/images/partner4.png" alt="logo4">
-                <img src="/images/partner5.png" alt="logo5">
-                <img src="/images/partner6.png" alt="logo6">
+                <img src="/images/logo/partner1.png" alt="logo1">
+                <img src="/images/logo/partner2.png" alt="logo2">
+                <img src="/images/logo/partner3.png" alt="logo3">
+                <img src="/images/logo/partner4.png" alt="logo4">
+                <img src="/images/logo/partner5.png" alt="logo5">
+                <img src="/images/logo/partner6.png" alt="logo6">
             </div>
         </div>
     </section>
 
-    <section class="figures">
+    <section id="gallery" class="figures">
         <h1>Figures</h1>
         <div class="gallery">
             <ul>
@@ -143,22 +146,22 @@
         <button type="button">Explore More</button>
     </section>
 
-    <section class="testimonial">
+    <section id="testimonial" class="testimonial">
         <div class="container">
             <h1>Hear from the Community</h1>
             <div class="testimonials-group">
                 <article>
-                    <img src="/images/person1.png" alt="person1">
+                    <img src="/images/icon/person1.png" alt="person1">
                     <h3>John Doe</h3>
                     <p>I really love it!</p>
                 </article>
                 <article>
-                    <img src="/images/person2.png" alt="person2">
+                    <img src="/images/icon/person2.png" alt="person2">
                     <h3>Hans Down</h3>
                     <p>Great quality and selection</p>
                 </article>
                 <article>
-                    <img src="/images/person3.png" alt="person3">
+                    <img src="/images/icon/person3.png" alt="person3">
                     <h3>Penny Norman</h3>
                     <p>Affordable prices!</p>
                 </article>
@@ -166,7 +169,7 @@
         </div>
     </section>
 
-    <section class="closure">
+    <section id="closure" class="closure">
         <div class="closure-group">
             <h3>Subscribe to our Newsletter</h3>
             <p>Don't miss out on new Figures! </p>
@@ -184,14 +187,14 @@
         </div>
 
         <div class="social">
-        <img src="/images/twit.png" alt="twitter">
-        <img src="/images/fb.png" alt="facebook">
-        <img src="/images/insta.png" alt="instagram">
-        <img src="/images/yt.png" alt="youtube">
+        <img src="/images/icon/twit.png" alt="twitter">
+        <img src="/images/icon/fb.png" alt="facebook">
+        <img src="/images/icon/insta.png" alt="instagram">
+        <img src="/images/icon/yt.png" alt="youtube">
         </div>
 
         <div class="copyright">
-            <img src="/images/copy.png" alt="copyright">
+            <img src="/images/icon/copy.png" alt="copyright">
             <p>AniStore All rights reserved</p>
         </div>
     </footer>
@@ -202,17 +205,38 @@
     </div>
 
     <script>
-        function myFunction() {
-          var x = document.getElementById("menu");
-          if (x.style.display === "flex") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "flex";
-          }
-        }
-    </script>
+        function openMenu() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("burger-btn");
+            var z = document.getElementById("close-btn");
 
-    <script>
+            x.style.height = "90vh";
+            y.style.display = "none";
+            z.style.display = "block";
+            x.style.visibility = "visible";
+            
+        }
+
+        function closeMenu() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("burger-btn");
+            var z = document.getElementById("close-btn");
+
+            x.style.visibility = "hidden";
+            x.style.height = "0vh";
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+
+        window.addEventListener("load", () => {
+            for (var  i = 1; i < 7; i++) {
+                document.querySelector("#link" + i).addEventListener("click", e => {
+                    var x = document.getElementById("menu");
+                    x.style.display = "none";
+                });
+            }
+        });
+
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("modal-img");
 

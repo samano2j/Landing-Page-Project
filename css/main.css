@@ -21,6 +21,11 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -43,10 +48,15 @@ h3 {
 }
 
 main {
-  height: 100vh;
-  background-image: url(/images/main.png);
+  background-image: url(/images/background/bg-main.png);
   background-size: cover;
   background-position: 20%;
+}
+main .container {
+  position: fixed;
+  z-index: 2;
+  background-color: #ffce00;
+  width: 100%;
 }
 main header {
   height: 10vh;
@@ -64,12 +74,23 @@ main header nav ul a:active, main header nav ul a:visited, main header nav ul a:
   color: white;
   text-decoration: none;
 }
-main header .icon {
-  background-image: url(/images/burger-btn.png);
+main header #burger-btn {
+  background-image: url(/images/icon/burger-btn.png);
   background-size: cover;
   border-radius: 0;
   height: 50px;
   width: 50px;
+}
+main header #close-btn {
+  background-image: url(/images/icon/close-btn.png);
+  background-size: cover;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+main header #burger-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
 main img {
   height: 50px;
@@ -85,13 +106,16 @@ main .menu ul {
   text-decoration: none;
   background-color: #ffce00;
   text-align: center;
-  height: 90vh;
+  height: 0vh;
+  margin-top: 10vh;
   font-size: 2rem;
   font-weight: 700;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  display: none;
+  overflow: hidden;
 }
 main .menu ul a:active, main .menu ul a:visited, main .menu ul a:link {
   color: black;
@@ -101,12 +125,15 @@ main .menu ul a:hover {
   color: white;
 }
 main .headline {
-  height: 90vh;
-  padding: 40px 20px;
+  height: 100vh;
+  padding: 10vh 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+main .headline hgroup {
+  margin-top: 30px;
 }
 main .headline article {
   background-color: #ffce00;
@@ -124,7 +151,7 @@ main .headline article p {
   height: 100vh;
   padding: 20px;
   text-align: center;
-  background-image: url(/images/bg-benefit.png);
+  background-image: url(/images/background/bg-benefit.png);
   background-size: cover;
 }
 .benefit .benefit-group {
@@ -149,7 +176,7 @@ main .headline article p {
 .partner {
   height: 60vh;
   padding: 20px;
-  background-image: url(/images/bg-partner.png);
+  background-image: url(/images/background/bg-partner.png);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -238,7 +265,7 @@ main .headline article p {
   height: 60vh;
   padding: 20px;
   text-align: center;
-  background-image: url(/images/bg-testimonial.png);
+  background-image: url(/images/background/bg-testimonial.png);
   background-size: cover;
   background-position: center;
 }
@@ -267,7 +294,7 @@ main .headline article p {
   height: 60vh;
   padding: 20px;
   text-align: center;
-  background-image: url(/images/bg-closure.png);
+  background-image: url(/images/background/bg-closure.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -338,7 +365,7 @@ footer .copyright img {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   padding: 20px;
   left: 0;
   top: 0;
@@ -372,6 +399,11 @@ button {
   font-weight: 700;
 }
 
+button:hover {
+  background: white;
+  color: rgb(255, 170, 77);
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 3.5rem;
@@ -388,6 +420,9 @@ button {
     justify-content: start;
     gap: 20px;
     width: 60%;
+  }
+  main .headline hgroup {
+    margin-top: 50px;
   }
   main .headline article {
     font-size: 1.5rem;
@@ -496,7 +531,10 @@ button {
   h3 {
     font-size: 2rem;
   }
-  main header .icon {
+  main header {
+    padding: 20px;
+  }
+  main header #burger-btn, main header #close-btn {
     display: none;
   }
   main header nav {

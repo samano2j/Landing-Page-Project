@@ -1,4 +1,10 @@
-$color-title: rgb(255, 170, 77);
+$color-main: rgb(255, 170, 77);
+$color-bg: #ffce00;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10vh;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,7 +13,7 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: $color-title;
+    color: $color-main;
     text-shadow: -2px 2px black;
 }
 

@@ -1,9 +1,15 @@
 
 main {
-    height: 100vh;
-    background-image: url(/images/main.png);
+    background-image: url(/images/background/bg-main.png);
     background-size: cover;
     background-position: 20%;
+
+    .container {
+        position: fixed;
+        z-index: 2;
+        background-color: $color-bg;
+        width: 100%;
+    }
 
     header {
         height: 10vh;
@@ -26,14 +32,26 @@ main {
 
         }
 
-        .icon {
-            background-image: url(/images/burger-btn.png);
+        #burger-btn {
+            background-image: url(/images/icon/burger-btn.png);
             background-size: cover;
             border-radius: 0;
             height: 50px;
             width: 50px;
         }
 
+        #close-btn {
+            background-image: url(/images/icon/close-btn.png);
+            background-size: cover;
+            border-radius: 0;
+            height: 50px;
+            width: 50px;
+            display: none;
+        }
+
+        #burger-btn:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
 
     }
 
@@ -51,15 +69,19 @@ main {
             list-style: none;
             text-decoration: none;
 
-            background-color: #ffce00;
+            background-color: $color-bg;
             text-align: center;
-            height: 90vh;
+            height: 0vh;
+            margin-top: 10vh;
             font-size: 2rem;
             font-weight: 700;
+            transition: all 0.5s;
+            transition-timing-function: ease-in-out;
 
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            overflow: hidden;
 
             a:active, a:visited, a:link {
                 color: black;
@@ -70,21 +92,23 @@ main {
                 color: white;
             }
 
-            display: none;
-
         }
     }
 
     .headline {
-        height: 90vh;
-        padding: 40px 20px;
+        height: 100vh;
+        padding: 10vh 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        hgroup { 
+            margin-top: 30px;
+        }
+
         article {
-            background-color: #ffce00;
+            background-color: $color-bg;
             padding: 10px;
             border-radius: 10px;
             color: black;
@@ -103,7 +127,7 @@ main {
     padding: 20px;
     text-align: center;
 
-    background-image: url(/images/bg-benefit.png);
+    background-image: url(/images/background/bg-benefit.png);
     background-size: cover;
 
     .benefit-group {
@@ -113,7 +137,7 @@ main {
         padding: 20px;
 
         article {
-            background-color: #ffce00;
+            background-color: $color-bg;
             border-radius: 10px;
             padding: 10px;
 
@@ -133,7 +157,7 @@ main {
     height: 60vh;
     padding: 20px;
 
-    background-image: url(/images/bg-partner.png);
+    background-image: url(/images/background/bg-partner.png);
     background-size: cover;
     background-position: center;
 
@@ -198,7 +222,7 @@ main {
     padding: 20px;
     text-align: center;
 
-    background-image: url(/images/bg-testimonial.png);
+    background-image: url(/images/background/bg-testimonial.png);
     background-size: cover;
     background-position: center;
 
@@ -210,7 +234,7 @@ main {
         gap: 10px;
 
         article {
-            background-color: #ffce00;
+            background-color: $color-bg;
             border-radius: 10px;
             padding: 3px 10px;
 
@@ -232,7 +256,7 @@ main {
     padding: 20px;
     text-align: center;
 
-    background-image: url(/images/bg-closure.png);
+    background-image: url(/images/background/bg-closure.png);
     background-size: cover;
     background-position: center;
 
@@ -241,7 +265,7 @@ main {
     align-items: center;
 
     .closure-group {
-        background-color: #ffce00;
+        background-color: $color-bg;
         border-radius: 20px;
         padding: 10px;
     }
@@ -272,7 +296,7 @@ main {
 
 footer {
     height: 30vh;
-    background-color: #ffce00;
+    background-color: $color-bg;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -314,7 +338,7 @@ footer {
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 3; 
     padding: 20px;
     left: 0;
     top: 0;
